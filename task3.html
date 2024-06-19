@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow - Movie Tickets</title>
+    <link rel="stylesheet" href="task3.css">
+
+</head>
+<body background="https://thumbs.dreamstime.com/b/movie-ticket-booking-app-movie-ticket-booking-app-popcorn-movie-theater-tickets-smartphone-146082701.jpg">
+    
+    <header>
+        <div class="container">
+            <h1>Movie tickets booking</h1>
+            <nav>
+                <ul>
+                    <li data-section="home"><a href="#">Home</a></li>
+                    <li data-section="movies"><a href="#">Movies</a></li>
+                    <li data-section="events"><a href="#">Events</a></li>
+                    <li data-section="contact"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="section active">
+            <div class="container">
+                <br>
+                <center>
+                    <font size="24"><b>Welcome!</b></font></center>
+            </div>
+        </section>
+        <section id="movies" class="section">
+            <div class="container">
+                <h2>Select a Movie</h2>
+                <select id="movie-select" aria-label="Select a Movie">
+                    <option value="10">Avengers: Endgame ($10)</option>
+                    <option value="12">Joker ($12)</option>
+                    <option value="8">Toy Story 4 ($8)</option>
+                    <option value="9">The Lion King ($9)</option>
+                </select>
+           
+            <h2>Select Seats</h2>
+            <div class="seating">
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+
+            <h2>Summary</h2>
+            <p>You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span></p>
+            <button id="book-now">Book Now</button>
+        </section>
+        <section id="events" class="section">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <p>Stay tuned for the latest events happening near you!</p>
+            </div>
+       </section>
+       
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>If you need any help</h2>
+                <p>Contact :+140-456789,+04-8765433</p>
+            </div>
+        </section>
+    </main>
+   
+    <script src="script.js"></script>
+</body>
+</html>
